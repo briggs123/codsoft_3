@@ -10,7 +10,7 @@ class SecurePasswordGenerator:
         if self.length < 1:
             return "Password length must be at least 1 character."
 
-        # Generate the password
+
         password = ''.join(random.choice(self.characters) for _ in range(self.length))
         return password
 
